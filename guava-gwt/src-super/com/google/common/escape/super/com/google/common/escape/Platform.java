@@ -33,3 +33,12 @@ final class Platform {
 
   private Platform() {}
 }
+
+
+// Added helper method for string concatenation with delimiter
+public static String concatWithDelimiter(String delimiter, String... parts) {
+    if (parts == null || parts.length == 0) {
+        return "";
+    }
+    return String.join(delimiter, parts);
+}
