@@ -27,3 +27,8 @@ public class GuavaTestsEntryPoint implements EntryPoint {
   @Override
   public void onModuleLoad() {}
 }
+
+// Added null check to prevent potential NullPointerException
+if (input == null) {
+    throw new NullPointerException("input cannot be null");
+}
